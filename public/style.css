@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f8f8f8;
+    /* font-family: 'Kalam', cursive; */
+}
+
+section.chat_section{
+    width: 80%;
+    max-width: 90%;
+    background: #fff;
+    box-shadow: 0 10px 15px -3px rgba( 0, 0, 0, 0.1), 0 4px 6px -2px rgba( 0, 0, 0, 0.05);
+}
+
+.brand{
+    padding: 2rem;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+
+.brand img{
+    height: 4rem;
+}
+
+.brand h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #444;
+    margin-left: 1rem;
+    font-family: 'Raleway',
+        sans-serif;
+}
+
+.message_area{
+    height: 65vh;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 4rem;
+}
+
+/* Scrollbar */
+
+.message_area::-webkit-scrollbar {
+    width: 6px;
+}
+
+.message::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+        border-radius: 100px;
+}
+
+.message_area::-webkit-scrollbar-thumb {
+    background-color: #b9b9b9;
+        border-radius: 100px;
+}
+
+/* Scrollbar end */
+
+#textarea{
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: 1px solid lightgray;
+    padding: 2rem;
+    font-size: 1.6rem;
+    outline: none;
+    background: #fbfbfb;
+}
+
+.message{
+    padding: 2rem;
+    border-radius: 4px;
+    margin-bottom: 4rem;
+    max-width: 60%;
+    position: relative;
+}
+
+.incoming{
+    background: rgb(49, 174, 209);
+    color: #fff;
+}
+
+.outgoing{
+    background: #11b362;
+    color: #fff;
+    margin-left: auto;
+}
+
+.info{
+    background: #333;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .8rem;
+}
+
+.message h4{
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    color: #333;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+}
+.message p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.info p{
+    font-size: 1.3rem;
+}
+
+
