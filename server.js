@@ -27,9 +27,9 @@ io.on('connection', (socket) =>{
     // for a particular event
     // when a user joins
     socket.on('new-user-joined', name =>{
-        console.log(name);
+        // console.log(name);
         user[socket.id] = name;
-        console.log(user);
+        // console.log(user);
         socket.broadcast.emit('user-joined', name);
     });
 
