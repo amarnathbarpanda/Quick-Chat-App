@@ -70,7 +70,7 @@ section.chat_section{
     padding: 4rem;
     background: url('doodles.webp');
     background-size: contain;
-    background-repeat: repeat-x;
+    background-repeat: repeat                               ;
     background-position: center;
 }
 
