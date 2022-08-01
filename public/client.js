@@ -5,10 +5,14 @@ let name;
 
 let textarea = document.querySelector('#textarea');
 let messageArea = document.querySelector('.message_area');
-
+let user = document.getElementById('user');
 do{
     name = prompt('Please enter your name');
 }while(!name);
+
+//to display user name on hovering on user icon
+
+user.innerHTML = `<img src="https://cdn-icons-png.flaticon.com/512/3237/3237472.png" alt="user" title="${name}">`
 
 //emitting event to server
 socket.emit('new-user-joined', name);
@@ -17,6 +21,7 @@ socket.emit('new-user-joined', name);
 // listening the events send by server
 socket.on('user-joined', name =>{
     appendMessage({message:`${name} joined the chat!`}, 'info');
+
 })
 
 // Receive messages from server
