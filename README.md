@@ -26,3 +26,11 @@ All the messages send by the user will be shown on right and received messages o
 
 ###### Home Page Chat
 ![Users sending and receiving messages Screenshot](images/2.png)
+
+
+## Learnings by building this beautiful Chat App
+- I got a better hold on the use of socket.io library.
+- Learnt creating server in Node.js with express.
+
+## Steps to run this project
+- Clone it from gitHub and open the terminal inside the downloaded project and write node server.js then press enter.
