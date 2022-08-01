@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+:root{
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Raleway', sans-serif;
+
+    --color-incoming: rgb(49, 174, 209);
+    --color-outgouing: rgb(17, 179, 98);
+}
+
 html{
     font-size: 62.5%;
 }
@@ -16,15 +24,15 @@ body{
     justify-content: center;
     min-height: 100vh;
     background: #24C6DC;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #514A9D, #24C6DC);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    /* font-family: 'Kalam', cursive; */
+        
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #514A9D, #24C6DC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+/* Chat container */
 section.chat_section{
     width: 80%;
     max-width: 90%;
@@ -49,18 +57,18 @@ section.chat_section{
     font-size: 2rem;
     color: #444;
     margin-left: 1rem;
-    font-family: 'Raleway',
-        sans-serif;
+    font-family: var(--font-secondary);
 }
 .brand span{
     position: absolute;
     right: 1rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-primary);
     font-size: 1.4rem;
     display: flex;
     align-items: center;
 }
 
+/* chat box */
 .message_area{
     height: 65vh;
     padding: 1.6rem;
@@ -70,7 +78,7 @@ section.chat_section{
     padding: 4rem;
     background: url('doodles.webp');
     background-size: contain;
-    background-repeat: repeat                               ;
+    background-repeat: repeat;
     background-position: center;
 }
 
@@ -92,6 +100,8 @@ section.chat_section{
 
 /* Scrollbar end */
 
+
+/* Message box */
 #textarea{
     width: 100%;
     border-left: none;
@@ -113,12 +123,13 @@ section.chat_section{
 }
 
 .incoming{
-    background: rgb(49, 174, 209);
+    background: var(--color-incoming);
     color: #fff;
+    margin-right: auto;
 }
 
 .outgoing{
-    background: #11b362;
+    background: var(--color-outgouing);
     color: #fff;
     margin-left: auto;
 }
@@ -137,15 +148,13 @@ section.chat_section{
     left: 0;
     color: #333;
     font-size: 1.4rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-primary);
 }
 .message p{
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-primary);
     font-size: 1.5rem;
 }
 
 .info p{
     font-size: 1.3rem;
 }
-
-
