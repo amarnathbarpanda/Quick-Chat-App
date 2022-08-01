@@ -21,6 +21,8 @@ All the messages send by the user will be shown on right and received messages o
     This is the area which enables the users to compose their messages and on clicking on enter the composed message will be delivred to all the connected members of the chat app.
     
 ##Screenshots
+###### Home Page
 ![Home Page Screenshot](images/1.png)
 
+###### Home Page Chat
 ![Users sending and receiving messages Screenshot](images/2.png)
