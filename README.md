@@ -34,3 +34,5 @@ All the messages send by the user will be shown on right and received messages o
 
 ## Steps to run this project
 - Clone it from gitHub and open the terminal inside the downloaded project and write node server.js then press enter.
+
+### Hosted link: - https://simple-quick-chat-app.herokuapp.com/
